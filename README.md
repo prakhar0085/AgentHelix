@@ -13,7 +13,7 @@
 
 AgentHelix is built using a **Feedback-Driven State Machine** pattern. Agents collaborate through a shared persistent state to drive the lifecycle of an issue.
 
-![Architecture Diagram](assets/architecture.png)
+![Architecture_Diagram](architecture.jpg).
 
 ---
 
