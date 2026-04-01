@@ -1,0 +1,44 @@
+# 🔐 Environment variables
+.env
+
+# 🐍 Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 📦 Virtual environment
+venv/
+env/
+.venv/
+
+# 🗄️ Database files
+*.db
+*.sqlite3
+
+# 🧾 Logs
+*.log
+
+# ⚙️ OS files
+.DS_Store
+Thumbs.db
+
+# 🧪 Testing / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# 🏗️ Build files
+dist/
+build/
+*.egg-info/
+
+# 🐳 Docker (optional)
+*.pid
+
+# 📝 VS Code / IDE
+.vscode/
+.idea/
+
+# 🔥 Your custom files (important)
+aiorch.db

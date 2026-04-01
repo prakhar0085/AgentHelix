@@ -1,0 +1,9 @@
+# Sandbox Dockerfile
+# Used by docker_runner.py to run generated pytest suites safely.
+FROM python:3.11-slim
+
+# Install only what's needed for test execution
+RUN pip install --no-cache-dir pytest pytest-timeout
+
+# No ENTRYPOINT — docker_runner.py executes commands via exec_run()
+WORKDIR /workspace

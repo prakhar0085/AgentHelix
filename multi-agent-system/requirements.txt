@@ -1,0 +1,23 @@
+# Core orchestration
+langgraph>=0.2.0
+langchain-core>=0.2.0
+langchain-groq>=0.1.0
+
+# GitHub integration
+PyGithub>=2.3.0
+GitPython>=3.1.0
+requests>=2.31.0
+
+# Docker sandbox
+docker>=7.0.0
+
+# Environment / config
+python-dotenv>=1.0.0
+
+# Utilities
+rich>=13.0.0          # Pretty console logging
+
+# API Backend
+fastapi>=0.100.0
+uvicorn>=0.23.0
+sse-starlette>=1.6.5
