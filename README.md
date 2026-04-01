@@ -1,17 +1,17 @@
-# 🚀 AiOrch: Autonomous Multi-Agent GitHub Automator
+# 🚀 AgentHelix: Autonomous Multi-Agent GitHub Automator
 
 [![Status: Production Ready](https://img.shields.io/badge/Status-Production--Ready-brightgreen?style=for-the-badge)](https://github.com/prakhar0085/AgentHelix)
 [![Framework: LangGraph](https://img.shields.io/badge/Orchestrator-LangGraph-orange?style=for-the-badge)](https://github.com/langchain-ai/langgraph)
 [![Intelligence: Llama 3](https://img.shields.io/badge/LLM-Llama--3--70B-blue?style=for-the-badge)](https://groq.com)
 [![Vis: ReactFlow](https://img.shields.io/badge/Frontend-ReactFlow-cyan?style=for-the-badge)](https://reactflow.dev/)
 
-**AiOrch** (AI Orchestration) is a high-performance system that autonomously transforms GitHub issues into verified Pull Requests. By leveraging **LangGraph** to manage agent state and **Llama 3 (via Groq)** for ultra-fast reasoning, it researches, fixes, and tests code in isolated sandboxes with zero human intervention.
+**AgentHelix** (AI Orchestration) is a high-performance system that autonomously transforms GitHub issues into verified Pull Requests. By leveraging **LangGraph** to manage agent state and **Llama 3 (via Groq)** for ultra-fast reasoning, it researches, fixes, and tests code in isolated sandboxes with zero human intervention. 
 
 ---
 
 ## 🏗 System Architecture
 
-AiOrch is built using a **Feedback-Driven State Machine** pattern. Agents collaborate through a shared persistent state to drive the lifecycle of an issue.
+AgentHelix is built using a **Feedback-Driven State Machine** pattern. Agents collaborate through a shared persistent state to drive the lifecycle of an issue.
 
 ```mermaid
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#3b82f6', 'edgeLabelBackground':'#1f2937', 'tertiaryColor': '#111827'}}}%%
