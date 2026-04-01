@@ -13,58 +13,7 @@
 
 AgentHelix is built using a **Feedback-Driven State Machine** pattern. Agents collaborate through a shared persistent state to drive the lifecycle of an issue.
 
-```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#3b82f6', 'edgeLabelBackground':'#1f2937', 'tertiaryColor': '#111827'}}}%%
-graph TB
-    subgraph Client ["🖥️ Presentation Layer"]
-        UI["<b>Web Dashboard</b><br/>React + Tailwind"]
-        FLOW["<b>Live Flow Engine</b><br/>ReactFlow"]
-    end
-
-    subgraph API ["⚡ Communication Gateway"]
-        FAST["<b>FastAPI Server</b><br/>WebSocket + REST"]
-    end
-
-    subgraph Core ["🧠 Orchestration Core"]
-        ORCH["<b>LangGraph Orchestrator</b><br/>State Machine Node Manager"]
-    end
-
-    subgraph Agents ["🤖 Autonomous Workforce"]
-        RA["<b>Research Agent</b><br/>Issue Analysis"]
-        CA["<b>Coding Agent</b><br/>Patch Generation"]
-        TA["<b>Testing Agent</b><br/>Docker Verification"]
-        PRA["<b>PR Agent</b><br/>GitHub Delivery"]
-    end
-
-    subgraph Infra ["🔌 Integrated Infrastructure"]
-        LLM["<b>Groq Llama-3</b>"]
-        DK["<b>Docker Sandbox</b>"]
-        GH["<b>GitHub API</b>"]
-    end
-
-    UI <--> FAST <--> ORCH
-    ORCH ==> RA & CA & TA & PRA
-    
-    RA --- LLM
-    CA --- LLM
-    TA --- DK
-    PRA --- GH
-    
-    TA -- "❌ Fail" --> CA
-    TA -- "✅ Pass" --> PRA
-
-    classDef client fill:#dcfce7,stroke:#166534,stroke-width:2px,color:#064e3b;
-    classDef api fill:#fef9c3,stroke:#854d0e,stroke-width:2px,color:#422006;
-    classDef core fill:#dbeafe,stroke:#1e40af,stroke-width:2px,color:#1e3a8a;
-    classDef agent fill:#f3e8ff,stroke:#6b21a8,stroke-width:2px,color:#4c1d95;
-    classDef infra fill:#fee2e2,stroke:#991b1b,stroke-width:2px,color:#7f1d1d;
-
-    class UI,FLOW client;
-    class FAST api;
-    class ORCH core;
-    class RA,CA,TA,PRA agent;
-    class LLM,DK,GH infra;
-```
+![Architecture Diagram](assets/architecture.png)
 
 ---
 
